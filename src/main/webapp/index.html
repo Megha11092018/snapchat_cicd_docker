@@ -1,58 +1,515 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Snapchat</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion Store</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+
+/* Navbar */
+
+header{
+background:#fff;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.navbar{
+max-width:1400px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#ff3f6c;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li{
+cursor:pointer;
+font-weight:bold;
+transition:.3s;
+}
+
+nav ul li:hover{
+color:#ff3f6c;
+}
+
+.search{
+flex:1;
+display:flex;
+justify-content:center;
+margin:0 40px;
+}
+
+.search input{
+width:100%;
+max-width:450px;
+padding:10px 15px;
+border:none;
+background:#f0f0f0;
+border-radius:25px;
+outline:none;
+}
+
+.icons{
+display:flex;
+gap:25px;
+font-size:14px;
+font-weight:bold;
+}
+
+/* Hero */
+
+.hero{
+height:500px;
+background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
+url("https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=1600");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero-content h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+padding:15px 35px;
+background:#ff3f6c;
+color:white;
+border:none;
+font-size:18px;
+border-radius:30px;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#d62b56;
+}
+
+/* Categories */
+
+.section{
+padding:50px 5%;
+}
+
+.section h2{
+margin-bottom:30px;
+font-size:32px;
+color:#333;
+}
+
+.categories{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.category{
+background:white;
+border-radius:12px;
+overflow:hidden;
+transition:.3s;
+cursor:pointer;
+}
+
+.category img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.category h3{
+padding:15px;
+text-align:center;
+}
+
+.category:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+/* Products */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+transition:.3s;
+}
+
+.card img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+.card-body{
+padding:15px;
+}
+
+.brand{
+color:#555;
+font-weight:bold;
+}
+
+.name{
+margin:8px 0;
+}
+
+.price{
+font-size:22px;
+font-weight:bold;
+color:#ff3f6c;
+}
+
+.old{
+text-decoration:line-through;
+color:gray;
+font-size:15px;
+margin-left:10px;
+}
+
+.discount{
+color:green;
+font-size:14px;
+}
+
+.buy{
+margin-top:15px;
+width:100%;
+padding:12px;
+border:none;
+background:#ff3f6c;
+color:white;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+}
+
+.buy:hover{
+background:#d82d57;
+}
+
+footer{
+background:#111;
+color:white;
+padding:30px;
+text-align:center;
+margin-top:40px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.navbar{
+flex-wrap:wrap;
+gap:15px;
+padding:15px;
+}
+
+.search{
+order:3;
+width:100%;
+margin:0;
+}
+
+nav ul{
+gap:15px;
+font-size:14px;
+overflow:auto;
+}
+
+.hero{
+height:380px;
+}
+
+.hero-content h1{
+font-size:38px;
+}
+
+.hero-content p{
+font-size:17px;
+}
+
+}
+
+@media(max-width:600px){
+
+.logo{
+font-size:24px;
+}
+
+.icons{
+font-size:12px;
+gap:15px;
+}
+
+.hero{
+height:320px;
+}
+
+.hero-content h1{
+font-size:28px;
+}
+
+.hero-content p{
+font-size:15px;
+}
+
+.btn{
+padding:12px 25px;
+font-size:15px;
+}
+
+}
+</style>
+
 </head>
+
 <body>
-  <header class="navbar">
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/en/a/ad/Snapchat_logo.svg" alt="Snapchat Logo" />
-      <span>Snapchat</span>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Download</a></li>
-        <li><a href="#">Stories</a></li>
-        <li><a href="#">Support</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Share Moments Instantly</h1>
-      <p>Connect with friends, create stories, and make memories with Snapchat.</p>
-      <a href="#" class="btn">Download Snapchat</a>
-    </div>
-  </section>
+<header>
 
-  <section class="features">
-    <div class="feature">
-      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Chat">
-      <h3>Instant Chat</h3>
-      <p>Send snaps and messages that disappear after being viewed.</p>
-    </div>
-    <div class="feature">
-      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Stories">
-      <h3>Stories</h3>
-      <p>Share your moments with friends and see what they’re up to.</p>
-    </div>
-    <div class="feature">
-      <img src="https://cdn-icons-png.flaticon.com/512/711/711245.png" alt="Discover">
-      <h3>Discover</h3>
-      <p>Find new friends and explore trending content from around the world.</p>
-    </div>
-  </section>
+<div class="navbar">
 
-  <footer>
-    <p>© 2025 Snapchat | Built for DevOps CI/CD Demo</p>
-  </footer>
+<div class="logo">Fashion</div>
+
+<nav>
+<ul>
+<li>Men</li>
+<li>Women</li>
+<li>Kids</li>
+<li>Beauty</li>
+<li>Home</li>
+</ul>
+</nav>
+
+<div class="search">
+<input type="text" placeholder="Search for products, brands and more">
+</div>
+
+<div class="icons">
+<span>Profile</span>
+<span>Wishlist</span>
+<span>Bag</span>
+</div>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+<h1>Big Fashion Sale</h1>
+<p>Up to 70% OFF on Top Brands</p>
+<button class="btn">Shop Now</button>
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Shop by Category</h2>
+
+<div class="categories">
+
+<div class="category">
+<img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600">
+<h3>Men</h3>
+</div>
+
+<div class="category">
+<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600">
+<h3>Women</h3>
+</div>
+
+<div class="category">
+<img src="https://images.unsplash.com/photo-1519238359922-989348752efb?w=600">
+<h3>Kids</h3>
+</div>
+
+<div class="category">
+<img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600">
+<h3>Footwear</h3>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Trending Products</h2>
+
+<div class="products">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?w=600">
+
+<div class="card-body">
+
+<div class="brand">Roadster</div>
+
+<div class="name">
+Casual Cotton Shirt
+</div>
+
+<div class="price">
+₹799
+<span class="old">₹1599</span>
+</div>
+
+<div class="discount">
+50% OFF
+</div>
+
+<button class="buy">Add to Bag</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600">
+
+<div class="card-body">
+
+<div class="brand">Nike</div>
+
+<div class="name">
+Running Shoes
+</div>
+
+<div class="price">
+₹2,499
+<span class="old">₹4,999</span>
+</div>
+
+<div class="discount">
+50% OFF
+</div>
+
+<button class="buy">Add to Bag</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600">
+
+<div class="card-body">
+
+<div class="brand">Puma</div>
+
+<div class="name">
+Sports Sneakers
+</div>
+
+<div class="price">
+₹1,999
+<span class="old">₹3,999</span>
+</div>
+
+<div class="discount">
+50% OFF
+</div>
+
+<button class="buy">Add to Bag</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600">
+
+<div class="card-body">
+
+<div class="brand">Levis</div>
+
+<div class="name">
+Women's Jacket
+</div>
+
+<div class="price">
+₹1,499
+<span class="old">₹2,999</span>
+</div>
+
+<div class="discount">
+50% OFF
+</div>
+
+<button class="buy">Add to Bag</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Fashion Store</h3>
+
+<p>Discover the latest trends in fashion.</p>
+
+<br>
+
+<p>© 2026 Fashion Store. All Rights Reserved.</p>
+
+</footer>
+
 </body>
 </html>
