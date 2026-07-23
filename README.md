@@ -1,4 +1,4 @@
-# 🚀 Snapchat Clone CI/CD Deployment using Jenkins, Docker & Tomcat
+# 🚀 Myntra Fashion Store App Clone CI/CD Deployment using Jenkins, Docker & Tomcat
 
 This project demonstrates a complete **CI/CD pipeline** for deploying a Java Maven Web Application (WAR) using **Jenkins**, **Docker**, **Apache Tomcat**, **Docker Hub**, and **AWS EC2 (Ubuntu)**.
 
@@ -50,6 +50,7 @@ snapchat_cicd_docker/
 │   └── main
 │       └── webapp
 │           ├── index.html
+|           |-- style.css
 │           ├── images/
 │           └── WEB-INF
 │               └── web.xml
@@ -399,70 +400,32 @@ snapchat-cicd-docker
 
 # 📸 Screenshots
 
-Create a folder named **screenshots** inside your repository and add the following images.
 
-```
-screenshots/
-│
-├── github-repository.png
-├── jenkins-dashboard.png
-├── jenkins-build-success.png
-├── jenkins-pipeline.png
-├── docker-images.png
-├── docker-containers.png
-├── dockerhub-repository.png
-├── application-homepage.png
-├── terminal-build.png
-└── ec2-instance.png
-```
 
-Then include them like this:
 
-## GitHub Repository
 
-![GitHub Repository](screenshots/github-repository.png)
-
----
-
-## Jenkins Dashboard
-
-![Jenkins Dashboard](screenshots/jenkins-dashboard.png)
-
----
 
 ## Successful Pipeline
 
-![Pipeline](screenshots/jenkins-build-success.png)
+![Pipeline](screenshots/Successfull pipeline.png)
 
 ---
 
-## Docker Images
+## Docker Hub
 
-![Docker Images](screenshots/docker-images.png)
-
----
-
-## Running Containers
-
-![Containers](screenshots/docker-containers.png)
-
----
-
-## Docker Hub Repository
-
-![DockerHub](screenshots/dockerhub-repository.png)
+![Docker Images](screenshots/docker images.png)
 
 ---
 
 ## EC2 Instance
 
-![EC2](screenshots/ec2-instance.png)
+![EC2](screenshots/EC2 instance.png)
 
 ---
 
 ## Live Application
 
-![Application](screenshots/application-homepage.png)
+![Application](screenshots/application.png)
 
 ---
 
