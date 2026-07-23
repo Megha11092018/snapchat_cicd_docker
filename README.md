@@ -398,36 +398,6 @@ snapchat-cicd-docker
 
 ---
 
-# 📸 Screenshots
-
-
-
-
-
-
-## Successful Pipeline
-
-![Pipeline](screenshots/Successfull pipeline.png)
-
----
-
-## Docker Hub
-
-![Docker Images](screenshots/docker images.png)
-
----
-
-## EC2 Instance
-
-![EC2](screenshots/EC2 instance.png)
-
----
-
-## Live Application
-
-![Application](screenshots/application.png)
-
----
 
 # 👩‍💻 Author
 
