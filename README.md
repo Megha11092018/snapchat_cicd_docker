@@ -351,7 +351,7 @@ snapchat-cicd-docker
 
 ## 🐳 Docker Images
 
-![Docker Images](output_images/docker-hub.png)
+![Docker Images](output_images/docker_hub.png)
 
 ---
 
