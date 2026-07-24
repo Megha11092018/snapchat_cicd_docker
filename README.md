@@ -345,26 +345,26 @@ snapchat-cicd-docker
 
 ## 🔄 Jenkins Pipeline Stage View
 
-![Pipeline Stage View](output images/jenkins.png)
+![Pipeline Stage View](output_images/jenkins.png)
 
 ---
 
 ## 🐳 Docker Images
 
-![Docker Images](output images/docker-hub.png)
+![Docker Images](output_images/docker-hub.png)
 
 ---
 
 
 ## 🌐 Myntra Fashion Store Application
 
-![Application Home](output images/application result.png)
+![Application Home](output_images/application_result.png)
 
 ---
 
 ## 🎉 Live Application
 
-![Live Application](output images/application.png)
+![Live Application](output_images/application.png)
 ---
 
 # ✨ Features
