@@ -172,48 +172,6 @@ git clone https://github.com/Megha11092018/snapchat_cicd_docker.git
 
 cd snapchat_cicd_docker
 ```
-
----
-
-# 🚀 CI/CD Workflow
-
-```
-Developer
-      │
-      ▼
-GitHub Repository
-      │
-      ▼
-Jenkins Pipeline
-      │
-      ▼
-Checkout Code
-      │
-      ▼
-Maven Build
-      │
-      ▼
-Generate WAR File
-      │
-      ▼
-Docker Build
-      │
-      ▼
-Docker Image
-      │
-      ▼
-Docker Hub Push
-      │
-      ▼
-Deploy Docker Container
-      │
-      ▼
-Tomcat Server
-      │
-      ▼
-Application Live
-```
-
 ---
 
 # 🐳 Docker Commands
@@ -398,36 +356,6 @@ snapchat-cicd-docker
 
 ---
 
-# 📸 Screenshots
-
-
-
-
-
-
-## Successful Pipeline
-
-![Pipeline](screenshots/Successfull pipeline.png)
-
----
-
-## Docker Hub
-
-![Docker Images](screenshots/docker images.png)
-
----
-
-## EC2 Instance
-
-![EC2](screenshots/EC2 instance.png)
-
----
-
-## Live Application
-
-![Application](screenshots/application.png)
-
----
 
 # 👩‍💻 Author
 
