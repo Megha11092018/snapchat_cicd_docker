@@ -339,7 +339,32 @@ docker run -d \
 --name snapchat-container \
 snapchat-cicd-docker
 ```
+---
 
+# 📸 Project Screenshots
+
+## 🔄 Jenkins Pipeline Stage View
+
+![Pipeline Stage View](output images/jenkins.png)
+
+---
+
+## 🐳 Docker Images
+
+![Docker Images](output images/docker-hub.png)
+
+---
+
+
+## 🌐 Myntra Fashion Store Application
+
+![Application Home](output images/application result.png)
+
+---
+
+## 🎉 Live Application
+
+![Live Application](output images/application.png)
 ---
 
 # ✨ Features
